@@ -111,6 +111,7 @@ button{
     width: 400px;
     color:rgb(72, 72, 72);
     margin-bottom: 1.8rem;
+    line-height: 1.3rem;
 }
 
 .hero_content p,span{
@@ -121,7 +122,7 @@ button{
 .hero_image{
     position: relative;
 }
-.hero_image img{
+img{
     width: 550px;
     height: 500px;
     border-radius: 3rem 0rem 0rem 0rem;  
@@ -152,9 +153,10 @@ button{
     padding: 6rem 5rem 3rem 5rem;
 }
 
-.about_us h2{
+ h2{
     font-size: 2.4rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .about_us p{
@@ -195,5 +197,33 @@ font-weight: 400;
 .content p{
     line-height: 1.5rem;
 }
+
+/* offer section */
+.offer{
+   padding-top: 2rem;
+
+}
+.section_one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.hero_content h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.offer_container{
+    margin-top: 2rem;
+}
+
+
+
+
+
 
 
