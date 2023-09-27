@@ -104,6 +104,7 @@ button{
     font-size: 2.9rem;
     line-height: 2.9rem;
     margin-bottom: 0.7rem;
+    letter-spacing: 0.5rem;
 }
 
 .hero_content .paragraphy_content{
@@ -141,14 +142,14 @@ button{
 }
 .go_btn{
     background-color: transparent;
-    border: 1px solid var(---BLACK);
+    border: 1.5px solid var(---BLACK);
  
 }
 
 /* WHO ARE WE SECTION */
 .about_us{
     text-align: center;
-    padding: 5rem;
+    padding: 6rem 5rem 3rem 5rem;
 }
 
 .about_us h2{
@@ -161,3 +162,38 @@ button{
     color:rgb(58, 58, 58);
     font-size: 1.1rem;
 }
+
+/* counter section */
+.counter_section{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+padding: 3rem;
+}
+
+.card{
+    background-color: var(---WHITE);
+    border: 1.5px solid var(---BLACK);
+    width: 300px;
+    padding: 2rem;
+    border-radius: 0.5rem; 
+}
+
+.count h3{
+font-size: 3rem;
+color:rgb(2, 96, 2);
+margin-bottom: 0.5rem;
+font-weight: 400;
+}
+
+.content h3{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.content p{
+    line-height: 1.5rem;
+}
+
+
