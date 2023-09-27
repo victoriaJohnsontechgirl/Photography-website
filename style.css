@@ -1,0 +1,163 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root{
+    ---PRIMARY_COLOR:rgb(3, 177, 3);
+    ---BLACK:black;
+    ---WHITE:white;
+    ---GREY:grey;
+    ---OVERLAY:rgba(0, 0, 0, 0.392);
+
+}
+
+/* body*/
+body{
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s ease-in;
+}
+
+
+
+/* NAVIGATION */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(---GREY);
+}
+.logo{
+    color:var(---PRIMARY_COLOR);
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Lobster', cursive;
+}
+
+.fa-republican{
+    color:var(---BLACK);
+    font-size: 1rem;
+}
+
+.logo span{
+    color:var(---BLACK);
+   
+}
+ul,li,a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1rem;
+    color:var(---GREY);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.active a{
+    color: var(---BLACK);
+}
+
+button{
+    background-color: var(---PRIMARY_COLOR);
+    color:var(---WHITE);
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+}
+
+/* HERO SECTION */
+.hero_section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    background-color: #b5f8d2;
+    background-image: linear-gradient(114deg, #b5f8d2 0%, #f2fff7 50%, #ffffff 100%);
+}
+.main_upper_hero_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_content{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.hero_content h1{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.9rem;
+    line-height: 2.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.hero_content .paragraphy_content{
+    width: 400px;
+    color:rgb(72, 72, 72);
+    margin-bottom: 1.8rem;
+}
+
+.hero_content p,span{
+    margin-bottom: 0.7rem;
+    text-transform: capitalize;
+    
+}
+.hero_image{
+    position: relative;
+}
+.hero_image img{
+    width: 550px;
+    height: 500px;
+    border-radius: 3rem 0rem 0rem 0rem;  
+}
+
+.overlay{
+    position: absolute;
+    background-color: var(---OVERLAY);
+    width: 50%;
+    height: 500px;
+    border-radius: 3rem 0rem 0rem 0rem;  
+}
+.btn button{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color:var(---BLACK);
+    font-weight: bold; 
+   
+}
+.go_btn{
+    background-color: transparent;
+    border: 1px solid var(---BLACK);
+ 
+}
+
+/* WHO ARE WE SECTION */
+.about_us{
+    text-align: center;
+    padding: 5rem;
+}
+
+.about_us h2{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.about_us p{
+    line-height: 1.5rem;
+    color:rgb(58, 58, 58);
+    font-size: 1.1rem;
+}
