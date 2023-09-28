@@ -122,7 +122,7 @@ button{
 .hero_image{
     position: relative;
 }
-img{
+.hero_image img{
     width: 550px;
     height: 500px;
     border-radius: 3rem 0rem 0rem 0rem;  
@@ -149,7 +149,10 @@ img{
 
 /* WHO ARE WE SECTION */
 .about_us{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 6rem 5rem 3rem 5rem;
 }
 
@@ -163,6 +166,7 @@ img{
     line-height: 1.5rem;
     color:rgb(58, 58, 58);
     font-size: 1.1rem;
+    text-align: center;
 }
 
 /* counter section */
@@ -234,7 +238,7 @@ background-image: linear-gradient(0deg, #ffffff 0%, #c1ffe2 78%, #ffffff 100%);
     margin: 0 auto;
 }
 .work_content,.content h3{
-    margin: 1rem 0rem 1rem 0rem;
+    margin: 2rem 0rem 1.3rem 0rem;
 }
 
 .work_content,.content P{
@@ -242,7 +246,8 @@ background-image: linear-gradient(0deg, #ffffff 0%, #c1ffe2 78%, #ffffff 100%);
  color:rgb(58, 58, 58);
 }
 .work_card{
-    border: none;
+    border: 2px solid  rgb(0, 36, 0);
+    border-radius: 2rem 0rem 2rem 0rem;
     text-align: center;
     background-color: transparent;
 }
@@ -254,31 +259,154 @@ background-image: linear-gradient(0deg, #ffffff 0%, #28d57e 89%);
     font-size: 1.7rem;
     
 }
+
+
 /* testimonials */
 .testimonials{
     background-color: #ffffff;
     background-image: linear-gradient(0deg, #ffffff 0%, #cffee8 58%);
+    padding: 4rem;
 }
 
 .testimonials_content{
-    padding: 4rem;
-    
-    
+  text-align: center;
+  padding: 2rem;
+  width: 500px;
+  margin: 0 auto;  
+  text-transform: capitalize;
+ 
 }
+.testimonials_content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.testimonials_content p{
+    font-size: .9rem;
+    color:rgb(58, 58, 58);
+}
+.testimonials_content h2 span{
+    font-size: 1.5rem;
+}
+
 .offer_container{
     gap: 2rem;
 }
 .testimonials_card{
-    background-color: rgba(26, 20, 20, 0.408);
+    background-color: rgba(0, 32, 0, 0.457);
     color:white;
     border: none;
 }
+.personal_details{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 1rem;
+}
+
+q{
+    font-size: 0.8rem;
+}
+.img_name{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;  
+}
+.personal_details img{
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+}
 
 
+/* latest work */ 
+.latest_work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.latest_work h2{
+    text-decoration: line-through;
+}
+ .latest_work img{
+    width: 800px;
+    
+}
 
+/* edit section */
+.edit{
+    background-color: #7bffc1;
+background-image: linear-gradient(43deg, #7bffc1 0%, #ffffff 46%, #7bffc1 100%);
 
+}
 
+.edit_content{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.edit_content h2{
+    font-size: 2.2rem;
+}
+
+.edit_content h3{
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+small{
+    margin-top: 1.5rem;
+}
+
+/* footer */
+footer{
+padding: 2rem;
+}
+.upper_footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0rem 4rem 0rem;
+
+}
+
+.sector ul,li{
+display: block;
+text-align: left;
+color: var(---BLACK);
+font-size: 0.8rem;
+line-height: 1.4rem;
+
+}
+
+.bottom_footer{
+    padding-top: 1rem;
+    border-top: 1px solid var(---GREY);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conditions{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logo_sector{
+    width: 280px;
+
+}
+
+.logo_sector i{
+    font-size: 1.4rem;
+    color: var(---PRIMARY_COLOR);
+    margin: 2rem 0rem 1rem 0rem;
+}
 
 
 
