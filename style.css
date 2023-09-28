@@ -201,13 +201,13 @@ font-weight: 400;
 /* offer section */
 .offer{
    padding-top: 2rem;
-
+   background-color: #ffffff;
+background-image: linear-gradient(0deg, #ffffff 0%, #c1ffe2 78%, #ffffff 100%);
 }
 .section_one{
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .hero_content h4{
@@ -220,6 +220,61 @@ font-weight: 400;
 .offer_container{
     margin-top: 2rem;
 }
+
+/* work content */
+.work{
+    background-color: #cffee8;
+   background-image: linear-gradient(0deg, #cffee8 0%, #ffffff 18%); 
+}
+.work_content{
+    padding: 1rem 0rem 0rem 0rem;
+}
+.work_content p{
+    width: 600px;
+    margin: 0 auto;
+}
+.work_content,.content h3{
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.work_content,.content P{
+ font-size: 0.9rem;
+ color:rgb(58, 58, 58);
+}
+.work_card{
+    border: none;
+    text-align: center;
+    background-color: transparent;
+}
+.work_card i{
+    background-color: #ffffff;
+background-image: linear-gradient(0deg, #ffffff 0%, #28d57e 89%);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    
+}
+/* testimonials */
+.testimonials{
+    background-color: #ffffff;
+    background-image: linear-gradient(0deg, #ffffff 0%, #cffee8 58%);
+}
+
+.testimonials_content{
+    padding: 4rem;
+    
+    
+}
+.offer_container{
+    gap: 2rem;
+}
+.testimonials_card{
+    background-color: rgba(26, 20, 20, 0.408);
+    color:white;
+    border: none;
+}
+
+
 
 
 
