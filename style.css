@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /* reset */
 *{
     margin: 0;
@@ -16,7 +17,7 @@
     ---WHITE:white;
     ---GREY:grey;
     ---OVERLAY:rgba(0, 0, 0, 0.392);
-
+    ---OVERLAY-COLOR:rgba(3, 177, 3, 0.41);
 }
 
 /* body*/
@@ -43,8 +44,11 @@ nav{
     font-size: 2rem;
     font-weight: bolder;
     font-family: 'Lobster', cursive;
+    transition: .5s ease;
 }
-
+.logo:hover{
+    transform:scale(1.2);
+}
 .fa-republican{
     color:var(---BLACK);
     font-size: 1rem;
@@ -63,8 +67,11 @@ ul,li,a{
     color:var(---GREY);
     text-decoration: none;
     text-transform: capitalize;
+    transition: color .5s ease;
 }
-
+a:hover{
+    color:var(---PRIMARY_COLOR);
+}
 .active a{
     color: var(---BLACK);
 }
@@ -75,8 +82,16 @@ button{
     border-radius: 5px;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: none;
+    transition: .5s all;
+    cursor: pointer;
+   
 }
+button:hover{
+background-color: transparent;
+border: 1.5px solid var(---BLACK);
+color:var(---BLACK);
 
+}
 /* HERO SECTION */
 .hero_section{
     display: flex;
@@ -112,6 +127,7 @@ button{
     color:rgb(72, 72, 72);
     margin-bottom: 1.8rem;
     line-height: 1.3rem;
+    transition: .5s all;
 }
 
 .hero_content p,span{
@@ -144,7 +160,13 @@ button{
 .go_btn{
     background-color: transparent;
     border: 1.5px solid var(---BLACK);
- 
+ transition: 0.5s all;
+}
+
+.go_btn:hover{
+    background-color: var(---PRIMARY_COLOR);
+    color:var(---WHITE);
+    border: none;
 }
 
 /* WHO ARE WE SECTION */
@@ -179,13 +201,33 @@ padding: 3rem;
 }
 
 .card{
+    position: relative;
     background-color: var(---WHITE);
     border: 1.5px solid var(---BLACK);
     width: 300px;
     padding: 2rem;
     border-radius: 0.5rem; 
 }
+.card .overlay_content{
+position: absolute;
+border-radius: 0.5rem; 
+background: var(---OVERLAY-COLOR);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
 
+.card:hover .overlay_content{
+    opacity: 1;
+    
+  }
 .count h3{
 font-size: 3rem;
 color:rgb(2, 96, 2);
@@ -213,6 +255,8 @@ background-image: linear-gradient(0deg, #ffffff 0%, #c1ffe2 78%, #ffffff 100%);
     justify-content: center;
     align-items: center;
 }
+
+
 
 .hero_content h4{
     font-size: 1.6rem;
@@ -250,6 +294,12 @@ background-image: linear-gradient(0deg, #ffffff 0%, #c1ffe2 78%, #ffffff 100%);
     border-radius: 2rem 0rem 2rem 0rem;
     text-align: center;
     background-color: transparent;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.work_card:hover{
+    transform: scale(1.1);
 }
 .work_card i{
     background-color: #ffffff;
@@ -295,6 +345,10 @@ background-image: linear-gradient(0deg, #ffffff 0%, #28d57e 89%);
     background-color: rgba(0, 32, 0, 0.457);
     color:white;
     border: none;
+    transition: .5s all;
+}
+.testimonials_card:hover{
+    transform: scale(1.1);
 }
 .personal_details{
 display: flex;
